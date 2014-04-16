@@ -16,8 +16,6 @@ Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'tpope/vim-surround'
 
-Bundle 'Valloric/YouCompleteMe'
-
 " Ende Plugins
 
 " Setze <Leader>
@@ -46,6 +44,7 @@ colorscheme github
 if has("gui_running")
 	" Schalte Menüleiste aus
 	set guioptions-=m
+	set guifont=source\ code\ pro
 else
 	" Mausunterstützung im Terminal
 	set mouse=a
