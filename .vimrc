@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-sensible'
 
+Bundle 'wellle/targets.vim'
 Bundle 'Lokaltog/vim-easymotion'
 "let g:EasyMotion_leader_key = '<Leader>'
 
