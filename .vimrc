@@ -22,6 +22,9 @@ Bundle 'tpope/vim-surround'
 " Setze <Leader>
 let mapleader=" "
 
+" Mappe jk als Escape
+inoremap jk <Esc>
+
 " syntax highlighting
 filetype plugin indent on
 syntax on
