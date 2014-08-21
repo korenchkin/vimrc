@@ -35,6 +35,11 @@ set number
 " Hebe aktuelle Zeile hervor
 set cursorline
 
+" Mach Whitespace am Ende einer Zeile rot
+let wm1=matchadd('ErrorMsg', '\s\+\%#\@<!$')
+" Mach Leerzeichen vor Tabs rot
+let wm2=matchadd('ErrorMsg', ' \+\ze\t')
+
 " Bildschirm nicht refreshen wenn makros ausgeführt werden
 set lazyredraw
 
