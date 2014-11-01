@@ -84,3 +84,16 @@ nnoremap <Leader>p "+p
 nnoremap <Leader>P "+P
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
+
+" Fenster befehle
+
+" bewegen
+nnoremap <silent> <Leader>h :wincmd h<CR>
+nnoremap <silent> <Leader>j :wincmd j<CR>
+nnoremap <silent> <Leader>k :wincmd k<CR>
+nnoremap <silent> <Leader>l :wincmd l<CR>
+
+" größe ändern
+nnoremap <silent> <Leader>_ :wincmd _<CR>
+nnoremap <silent> <Leader>= :wincmd =<CR>
+nnoremap <silent> <Leader>\| :wincmd \|<CR>
