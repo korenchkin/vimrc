@@ -73,6 +73,12 @@ nnoremap <Leader>Y "+Y
 vnoremap <Leader>y "+y
 vnoremap <Leader>Y "+Y
 
+" Lösche in die Zwischenablage
+nnoremap <Leader>d "+d
+nnoremap <Leader>D "+D
+vnoremap <Leader>d "+d
+vnoremap <Leader>D "+D
+
 " Einfügen von der Zwischenablage
 nnoremap <Leader>p "+p
 nnoremap <Leader>P "+P
