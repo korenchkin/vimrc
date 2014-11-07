@@ -51,7 +51,7 @@ set undofile
 
 " Farbschema
 set t_Co=256
-colorscheme github
+colorscheme badwolf
 
 if has("gui_running")
 	" Schalte Menüleiste aus
