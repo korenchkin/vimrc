@@ -50,6 +50,7 @@ set undodir=$HOME/.vim/undo
 set undofile
 
 " Farbschema
+set t_Co=256
 colorscheme github
 
 if has("gui_running")
