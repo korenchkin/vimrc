@@ -2,20 +2,22 @@
 set nocompatible
 filetype off
 
-set rtp+=$HOME/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=$HOME/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'tpope/vim-sensible'
+Plugin 'tpope/vim-sensible'
 
-Bundle 'wellle/targets.vim'
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'wellle/targets.vim'
+Plugin 'Lokaltog/vim-easymotion'
 "let g:EasyMotion_leader_key = '<Leader>'
 
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
+
+call vundle#end()
 
 " Ende Plugins
 
