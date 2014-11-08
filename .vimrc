@@ -37,10 +37,11 @@ set number
 " Hebe aktuelle Zeile hervor
 set cursorline
 
+highlight WhitespaceError ctermbg=red guibg=red
 " Mach Whitespace am Ende einer Zeile rot
-let wm1=matchadd('ErrorMsg', '\s\+\%#\@<!$')
+let wm1=matchadd('WhitespaceError', '\s\+\%#\@<!$')
 " Mach Leerzeichen vor Tabs rot
-let wm2=matchadd('ErrorMsg', ' \+\ze\t')
+let wm2=matchadd('WhitespaceError', ' \+\ze\t')
 
 " Bildschirm nicht refreshen wenn makros ausgeführt werden
 set lazyredraw
