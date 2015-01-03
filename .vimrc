@@ -33,6 +33,8 @@ syntax on
 
 " Zeilennummern
 set number
+" Vergrößere das Fenster, weil sonst keine 80 Zeichen mehr passen
+set columns=84
 
 " Hebe aktuelle Zeile hervor
 set cursorline
