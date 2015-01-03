@@ -49,8 +49,10 @@ let wm2=matchadd('WhitespaceError', ' \+\ze\t')
 set lazyredraw
 
 " Persistent undo
-set undodir=$HOME/.vim/undo
-set undofile
+if exists('+persistent_undo')
+	set undodir=$HOME/.vim/undo
+	set undofile
+endif
 
 " Farbschema
 set t_Co=256
