@@ -17,6 +17,10 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'tpope/vim-surround'
 
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'airblade/vim-gitgutter'
+
 Plugin 'bling/vim-airline'
 
 call vundle#end()
