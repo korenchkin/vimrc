@@ -17,6 +17,8 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'tpope/vim-surround'
 
+Plugin 'bling/vim-airline'
+
 call vundle#end()
 
 " Ende Plugins
@@ -105,3 +107,8 @@ nnoremap <silent> <Leader>l :wincmd l<CR>
 nnoremap <silent> <Leader>_ :wincmd _<CR>
 nnoremap <silent> <Leader>= :wincmd =<CR>
 nnoremap <silent> <Leader>\| :wincmd \|<CR>
+
+" airline einstellungen
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline#extensions#branch#enabled = 1
