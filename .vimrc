@@ -115,4 +115,3 @@ nnoremap <silent> <Leader>\| :wincmd \|<CR>
 " airline einstellungen
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline#extensions#branch#enabled = 1
