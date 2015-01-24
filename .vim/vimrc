@@ -4,8 +4,8 @@ if filereadable(expand('~/.vim/plugins.vim'))
 endif
 
 " Lese systemspezifische Konfiguration
-if filereadable(expand('~/.vim/localrc'))
-	source ~/.vim/localrc
+if filereadable(expand('~/.vim/local.vim'))
+	source ~/.vim/local.vim
 endif
 
 " syntax highlighting
