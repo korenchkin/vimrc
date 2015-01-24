@@ -1,42 +1,12 @@
-" Plugins
-set nocompatible
-filetype off
-
-set rtp+=$HOME/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'tpope/vim-sensible'
-
-Plugin 'wellle/targets.vim'
-Plugin 'Lokaltog/vim-easymotion'
-"let g:EasyMotion_leader_key = '<Leader>'
-
-Plugin 'scrooloose/nerdcommenter'
-
-Plugin 'tpope/vim-surround'
-
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'airblade/vim-gitgutter'
-
-Plugin 'bling/vim-airline'
-
-call vundle#end()
+" Lade Plugins
+if filereadable(expand('~/.vim/plugins.vim'))
+	source ~/.vim/plugins.vim
+endif
 
 " Lese systemspezifische Konfiguration
 if filereadable(expand('~/.vim/localrc'))
 	source ~/.vim/localrc
 endif
-
-" Ende Plugins
-
-" Setze <Leader>
-let mapleader=" "
-
-" Mappe jk als Escape
-inoremap jk <Esc>
 
 " syntax highlighting
 filetype plugin indent on
@@ -50,6 +20,7 @@ set columns=84
 " Hebe aktuelle Zeile hervor
 set cursorline
 
+" Hebe Whitespace Fehler hervor
 highlight WhitespaceError ctermbg=red guibg=red
 " Mach Whitespace am Ende einer Zeile rot
 let wm1=matchadd('WhitespaceError', '\s\+\%#\@<!$')
@@ -77,13 +48,15 @@ else
 	set mouse=a
 endif
 
-" Spaces statt tabs für rust
-autocmd FileType rust setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 
-" Keine Zeilennummern für vims Hilfedateien
-autocmd FileType help setlocal nonumber
-
+" ===========================================================================
 " Keymappings
+
+" Setze <Leader>
+let mapleader=" "
+
+" Mappe jk als Escape
+inoremap jk <Esc>
 
 " Kopiere in die Zwischenablage
 nnoremap <Leader>y "+y
@@ -116,7 +89,16 @@ nnoremap <silent> <Leader>_ :wincmd _<CR>
 nnoremap <silent> <Leader>= :wincmd =<CR>
 nnoremap <silent> <Leader>\| :wincmd \|<CR>
 
-" airline einstellungen
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline#extensions#branch#enabled = 1
+
+
+" ===========================================================================
+" Dateispezifische Einstellungen
+
+" Spaces statt tabs für rust
+autocmd FileType rust setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+
+" Spaces statt tabs für haskell
+autocmd FileType haskell setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+
+" Keine Zeilennummern für vims Hilfedateien
+autocmd FileType help setlocal nonumber
