@@ -25,7 +25,7 @@ Plugin 'bling/vim-airline'
 
 call vundle#end()
 
-" Load system specific configuration
+" Lese systemspezifische Konfiguration
 if filereadable(expand('~/.vim/localrc'))
 	source ~/.vim/localrc
 endif
