@@ -27,6 +27,9 @@ Plugin 'airblade/vim-gitgutter'
 " Bessere Statusleiste
 Plugin 'bling/vim-airline'
 
+" solarized colorscheme
+Plugin 'altercation/vim-colors-solarized'
+
 call vundle#end()
 
 " airline einstellungen

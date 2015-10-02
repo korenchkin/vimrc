@@ -20,13 +20,6 @@ set columns=84
 " Hebe aktuelle Zeile hervor
 set cursorline
 
-" Hebe Whitespace Fehler hervor
-highlight WhitespaceError ctermbg=red guibg=red
-" Mach Whitespace am Ende einer Zeile rot
-let wm1=matchadd('WhitespaceError', '\s\+\%#\@<!$')
-" Mach Leerzeichen vor Tabs rot
-let wm2=matchadd('WhitespaceError', ' \+\ze\t')
-
 " Bildschirm nicht refreshen wenn makros ausgeführt werden
 set lazyredraw
 
@@ -37,8 +30,15 @@ if exists('+persistent_undo')
 endif
 
 " Farbschema
-set t_Co=256
-colorscheme badwolf
+set bg=dark
+colorscheme solarized
+
+" Hebe Whitespace Fehler hervor
+highlight WhitespaceError ctermbg=red guibg=red
+" Mach Whitespace am Ende einer Zeile rot
+let wm1=matchadd('WhitespaceError', '\s\+\%#\@<!$')
+" Mach Leerzeichen vor Tabs rot
+let wm2=matchadd('WhitespaceError', ' \+\ze\t')
 
 if has("gui_running")
 	" Schalte Menüleiste aus
@@ -88,7 +88,6 @@ nnoremap <silent> <Leader>l :wincmd l<CR>
 nnoremap <silent> <Leader>_ :wincmd _<CR>
 nnoremap <silent> <Leader>= :wincmd =<CR>
 nnoremap <silent> <Leader>\| :wincmd \|<CR>
-
 
 
 " ===========================================================================
