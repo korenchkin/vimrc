@@ -11,7 +11,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 
 " Fügt zusätzliche Objekte hinzu die mit anderen Befehlen benutzt werden
-" können
+" können. Erlaubt es das Klammern, etc einfach zu bearbeiten.
+" ci) kommt da her.
 Plugin 'wellle/targets.vim'
 
 " Kommentare
@@ -26,6 +27,9 @@ Plugin 'airblade/vim-gitgutter'
 
 " Bessere Statusleiste
 Plugin 'bling/vim-airline'
+
+" Tab completion
+Plugin 'valloric/YouCompleteMe'
 
 " solarized colorscheme
 Plugin 'altercation/vim-colors-solarized'
