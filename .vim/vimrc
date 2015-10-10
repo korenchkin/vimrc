@@ -91,8 +91,10 @@ nnoremap <silent> <Leader>= :wincmd =<CR>
 nnoremap <silent> <Leader>\| :wincmd \|<CR>
 
 " CtrlP
+nnoremap <Leader>t <c-]>
+nnoremap <Leader>z <c-t>
 nnoremap <Leader>f :CtrlP<CR>
-nnoremap <Leader>t :CtrlPTag<CR>
+nnoremap <Leader>r :CtrlPTag<CR>
 
 " ===========================================================================
 " Dateispezifische Einstellungen
