@@ -34,6 +34,9 @@ Plugin 'valloric/YouCompleteMe'
 " solarized colorscheme
 Plugin 'altercation/vim-colors-solarized'
 
+" Suche nach Dateien und Tags
+Plugin 'kien/ctrlp.vim'
+
 call vundle#end()
 
 " airline einstellungen
