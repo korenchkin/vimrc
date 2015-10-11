@@ -25,7 +25,9 @@ set cursorline
 set lazyredraw
 
 " Persistent undo
-if exists('+persistent_undo')
+" Das has(...) ist da, weil auf den Rechnern im CIP Pool kein ausreichend
+" aktuelles vim drauf ist
+if has('persistent_undo')
 	set undodir=$HOME/.vim/undo
 	set undofile
 endif
