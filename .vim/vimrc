@@ -30,6 +30,9 @@ if exists('+persistent_undo')
 	set undofile
 endif
 
+" Erlaubt es den buffer zu wechseln obwohl es ungespeicherte Änderungen gibt
+set hidden
+
 " Farbschema
 set bg=dark
 colorscheme solarized
