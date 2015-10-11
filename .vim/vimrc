@@ -101,6 +101,9 @@ nnoremap <Leader>z <c-t>
 nnoremap <Leader>f :CtrlP<CR>
 nnoremap <Leader>r :CtrlPTag<CR>
 
+" Undotree
+nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
+
 " ===========================================================================
 " Dateispezifische Einstellungen
 

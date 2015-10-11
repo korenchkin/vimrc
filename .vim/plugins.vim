@@ -37,6 +37,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Suche nach Dateien und Tags
 Plugin 'kien/ctrlp.vim'
 
+" Macht es einfacher vims undo tree zu navigieren
+Plugin 'mbbill/undotree'
+
 call vundle#end()
 
 " airline einstellungen
