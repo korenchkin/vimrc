@@ -40,6 +40,9 @@ Plugin 'kien/ctrlp.vim'
 " Macht es einfacher vims undo tree zu navigieren
 Plugin 'mbbill/undotree'
 
+" Füre ag aus vim heraus aus
+Plugin 'rking/ag.vim'
+
 call vundle#end()
 
 " airline einstellungen
