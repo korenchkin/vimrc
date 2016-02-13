@@ -43,6 +43,9 @@ Plugin 'mbbill/undotree'
 " Füre ag aus vim heraus aus
 Plugin 'rking/ag.vim'
 
+" Search / jump to things
+Plugin 'easymotion/vim-easymotion'
+
 call vundle#end()
 
 " airline einstellungen
