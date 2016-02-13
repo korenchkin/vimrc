@@ -59,11 +59,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_extra_conf_globlist = ['/scratch/work/TorstenWeber/build/checkmate/*']
 
-" fzf einstellungen
-nnoremap <Leader>ff :Files<CR>
-nnoremap <Leader>fj :Tags<CR>
-nnoremap <Leader>fk :Buffers<CR>
-nnoremap <Leader>fl :Lines<CR>
 
 " airline einstellungen
 let g:airline_left_sep=''
