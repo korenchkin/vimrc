@@ -52,6 +52,12 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
+" Doesn't let you spam movement keys
+Plugin 'takac/vim-hardtime'
+
+" Macht die zuletzt kopierten Sachen zugänglich
+Plugin 'vim-scripts/YankRing.vim'
+
 call vundle#end()
 
 "YouCompleteMe Einstellungen
@@ -59,6 +65,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_extra_conf_globlist = ['/scratch/work/TorstenWeber/build/checkmate/*']
 
+let g:hardtime_default_on = 1
 
 " airline einstellungen
 let g:airline_left_sep=''

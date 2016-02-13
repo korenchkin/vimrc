@@ -82,33 +82,43 @@ nnoremap <Leader>P "+P
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 
+" Scrollen
+nnoremap <Leader>j <PageDown>
+nnoremap <Leader>k <PageUp>
+
 " Fenster befehle
 
 " bewegen
-nnoremap <silent> <Leader>h :wincmd h<CR>
-nnoremap <silent> <Leader>j :wincmd j<CR>
-nnoremap <silent> <Leader>k :wincmd k<CR>
-nnoremap <silent> <Leader>l :wincmd l<CR>
+nnoremap <silent> <Leader>wh :wincmd h<CR>
+nnoremap <silent> <Leader>wj :wincmd j<CR>
+nnoremap <silent> <Leader>wk :wincmd k<CR>
+nnoremap <silent> <Leader>wl :wincmd l<CR>
 
 " größe ändern
-nnoremap <silent> <Leader>_ :wincmd _<CR>
-nnoremap <silent> <Leader>= :wincmd =<CR>
-nnoremap <silent> <Leader>\| :wincmd \|<CR>
+nnoremap <silent> <Leader>w_ :wincmd _<CR>
+nnoremap <silent> <Leader>w= :wincmd =<CR>
+nnoremap <silent> <Leader>w\| :wincmd \|<CR>
 
 " CtrlP
 nnoremap <Leader>t <c-]>
 nnoremap <Leader>z <c-t>
-nnoremap <Leader>f :CtrlP<CR>
-nnoremap <Leader>r :CtrlPTag<CR>
+"nnoremap <Leader>f :CtrlP<CR>
+"nnoremap <Leader>r :CtrlPTag<CR>
 
 " Undotree
 nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
 
-" fzf einstellungen
-nnoremap <Leader>ff :Files<CR>
-nnoremap <Leader>fj :Tags<CR>
-nnoremap <Leader>fk :Buffers<CR>
-nnoremap <Leader>fl :Lines<CR>
+" rzf einstellungen
+nnoremap <Leader>rf :Files<CR>
+nnoremap <Leader>rj :Tags<CR>
+nnoremap <Leader>rk :Buffers<CR>
+nnoremap <Leader>rl :Lines<CR>
+
+" easymotion einstellungen
+map <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-bd-f)
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 " ===========================================================================
 " Dateispezifische Einstellungen
