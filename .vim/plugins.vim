@@ -30,6 +30,8 @@ Plugin 'bling/vim-airline'
 
 " Tab completion
 Plugin 'valloric/YouCompleteMe'
+" Automatically generate build information for YouCompleteMe
+Plugin 'rdnetto/YCM-Generator'
 
 " solarized colorscheme
 Plugin 'altercation/vim-colors-solarized'
@@ -47,6 +49,11 @@ Plugin 'rking/ag.vim'
 Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()
+
+"YouCompleteMe Einstellungen
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_extra_conf_globlist = ['/scratch/work/TorstenWeber/build/checkmate/*']
 
 " airline einstellungen
 let g:airline_left_sep=''
