@@ -49,6 +49,7 @@ Plugin 'rking/ag.vim'
 Plugin 'easymotion/vim-easymotion'
 
 " Fuzzy Suche nach Dateien, Buffers, Tags, Zeilen, etc
+Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
